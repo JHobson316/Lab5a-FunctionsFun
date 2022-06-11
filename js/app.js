@@ -88,10 +88,12 @@ Test this function by hand in the console to get it working, and when you think 
 let testArray = [2, 3, 4]; //eslint-disable-line
 
 function sumArray(testArray) { //eslint-disable-line
+// Running sum by selecting the values from the array to use as parameters
 let arraySum1 = sum(testArray[0],testArray[1]);
 let arraySum2 = sum(arraySum1[0],testArray[2]);
-console.log(arraySum2);
+// Creating the return message to be placed in the return array
 let Message4 = `${testArray[0]},${testArray[1]},${testArray[2]} was passed in as an array of numbers, and ${arraySum2[0]} is their sum.`;
+// Placing both values into the return array
 let resultArray = [arraySum2[0], Message4];
 return resultArray;
 }
