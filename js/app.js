@@ -117,11 +117,14 @@ Test this function by hand in the console to get it working, and when you think 
 
 // Write your code here
 function multiplyArray(multArr) { //eslint-disable-line
-    let arrayProduct1 = multiply(testArray[0],testArray[1]);
-    let arrayProduct2 = multiply(arrayProduct1[0],testArray[2]);
-    let message = `The numbers ${testArray[0]},${testArray[1]},${testArray[2]} have a product of ${arrayProduct2[0]}.`;
-    let resultArray = [arrayProduct2[0], message];
-    return resultArray;
+// Running multiply by selecting the values from the array to use as parameters
+let arrayProduct1 = multiply(testArray[0],testArray[1]);
+let arrayProduct2 = multiply(arrayProduct1[0],testArray[2]);
+// Creating the return message to be placed in the return array
+let message = `The numbers ${testArray[0]},${testArray[1]},${testArray[2]} have a product of ${arrayProduct2[0]}.`;
+let resultArray = [arrayProduct2[0], message];
+// Placing both values into the return array
+return resultArray;
 }
 
 // Here is the test for multiplyArray(); uncomment it to run it
