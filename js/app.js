@@ -66,6 +66,7 @@ let product2 = multiply(product1, c)[0];
 let arrayProductMessage = `The product of ${a} and ${b} and ${c} is ${product2}.`;
 // Setting up the final array to return
 let sAMArray = [sum2, product2, arraySumMessage, arrayProductMessage];
+console.log(sAMArray);
 return sAMArray;
 }
 
