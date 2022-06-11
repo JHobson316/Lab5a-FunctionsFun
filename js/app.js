@@ -54,12 +54,17 @@ Test this function by hand in the console to get it working, and when you think 
 
 // Write your code here
 function sumAndMultiply(a, b, c) { //eslint-disable-line
+//Running sum twice to get both sums from the two arrays
 let sum1 = sum(a,b)[0];
 let sum2 = sum(sum1, c)[0];
+// Setting up my return message for the sums
 let arraySumMessage = `${a} and ${b} and ${c} sum to ${sum2}.`;
+// Running multiply twice to get both prosucts from the two arrays
 let product1 = multiply(a,b)[0];
 let product2 = multiply(product1, c)[0];
+// Setting up my return message for the products
 let arrayProductMessage = `The product of ${a} and ${b} and ${c} is ${product2}.`;
+// Setting up the final array to return
 let sAMArray = [sum2, product2, arraySumMessage, arrayProductMessage];
 console.log(sAMArray);
 return sAMArray;
@@ -84,11 +89,12 @@ Test this function by hand in the console to get it working, and when you think 
 let testArray = [2, 3, 4]; //eslint-disable-line
 
 function sumArray(testArray) { //eslint-disable-line
+// Running sum by selecting the values from the array to use as parameters
 let arraySum1 = sum(testArray[0],testArray[1]);
 let arraySum2 = sum(arraySum1[0],testArray[2]);
-// Remove this console log in branch later
-console.log(arraySum2);
+// Creating the return message to be placed in the return array
 let Message4 = `${testArray[0]},${testArray[1]},${testArray[2]} was passed in as an array of numbers, and ${arraySum2[0]} is their sum.`;
+// Placing both values into the return array
 let resultArray = [arraySum2[0], Message4];
 return resultArray;
 }
@@ -111,11 +117,14 @@ Test this function by hand in the console to get it working, and when you think 
 
 // Write your code here
 function multiplyArray(multArr) { //eslint-disable-line
-    let arrayProduct1 = multiply(testArray[0],testArray[1]);
-    let arrayProduct2 = multiply(arrayProduct1[0],testArray[2]);
-    let message = `The numbers ${testArray[0]},${testArray[1]},${testArray[2]} have a product of ${arrayProduct2[0]}.`;
-    let resultArray = [arrayProduct2[0], message];
-    return resultArray;
+// Running multiply by selecting the values from the array to use as parameters
+let arrayProduct1 = multiply(testArray[0],testArray[1]);
+let arrayProduct2 = multiply(arrayProduct1[0],testArray[2]);
+// Creating the return message to be placed in the return array
+let message = `The numbers ${testArray[0]},${testArray[1]},${testArray[2]} have a product of ${arrayProduct2[0]}.`;
+let resultArray = [arrayProduct2[0], message];
+// Placing both values into the return array
+return resultArray;
 }
 
 // Here is the test for multiplyArray(); uncomment it to run it
